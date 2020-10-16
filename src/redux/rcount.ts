@@ -23,11 +23,12 @@ export const subCount = (): CountTypes => ({
   type: SUB_COUNT
 })
 
-const initState: CountState = {
-  rCount: 0
+export const initState: CountState = {
+  rCount: 1
 }
 
-export const opCount = (state = initState, action: CountTypes): CountState => {
+export const opCount = (state: CountState = initState, action: CountTypes): CountState => {
+  debugger
   switch (action.type) {
     case ADD_COUNT:
       return {

@@ -24,6 +24,7 @@ const enhancer = composeEnhancers(applyMiddleware(...middlewares));
 // create store
 const store = createStore(rootReducer(history), {}, enhancer);
 
+export type RootState = ReturnType<typeof rootReducer>
 export default store;
 
 
