@@ -30,7 +30,7 @@ class TestRedux extends Component<Props> {
     return (
       <div>
         <Button onClick={sub}>减</Button>
-        <div>{ this.props.counter.rCount }</div>  
+        <div style={{ textAlign: 'center' }}>{ this.props.counter.rCount }</div>  
         <Button onClick={add}>加</Button>
       </div>
     );

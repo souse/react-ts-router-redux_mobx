@@ -28,7 +28,6 @@ export const initState: CountState = {
 }
 
 export const opCount = (state: CountState = initState, action: CountTypes): CountState => {
-  debugger
   switch (action.type) {
     case ADD_COUNT:
       return {
