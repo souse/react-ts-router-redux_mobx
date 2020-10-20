@@ -2,7 +2,7 @@ import { Fragment, useContext, useState } from 'react'
 
 import React from 'react'
 import ToDoList from '@/mobx/todolist'
-import { observer } from 'mobx-react'
+import { observer } from 'mobx-react-lite'
 
 
 const TodoAdd = () => {

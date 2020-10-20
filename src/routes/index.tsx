@@ -11,9 +11,9 @@ export default (
   <Suspense fallback="">
     <Switch>
       <Route exact path="/" component={Index} />
-      {/* <Route path="/about" component={About} />
+      <Route path="/about" component={About} />
       <Route path="/tredux" component={TestRedux} />
-      <Route path="/tMobx" component={TestMobx} /> */}
+      <Route path="/tMobx" component={TestMobx} />
       <Route path="/todo" component={TodoList} />
     </Switch>
   </Suspense>

@@ -7335,17 +7335,10 @@ mkdirp@^0.5.1, mkdirp@^0.5.3, mkdirp@~0.5.1:
   dependencies:
     minimist "^1.2.5"
 
-mobx-react-lite@^3.0.0:
-  version "3.0.0"
-  resolved "http://192.168.110.93:4873/mobx-react-lite/-/mobx-react-lite-3.0.0.tgz#f39b1cb23262ce539829d47217551e04bf14a8b7"
-  integrity sha1-85scsjJizlOYKdRyF1UeBL8UqLc=
-
-mobx-react@^7.0.0:
-  version "7.0.0"
-  resolved "http://192.168.110.93:4873/mobx-react/-/mobx-react-7.0.0.tgz#c2eb0c3f79ade93ffb07b1ffa07cbaeb5f04e9b6"
-  integrity sha1-wusMP3mt6T/7B7H/oHy6618E6bY=
-  dependencies:
-    mobx-react-lite "^3.0.0"
+mobx-react-lite@^3.0.1:
+  version "3.0.1"
+  resolved "http://192.168.110.93:4873/mobx-react-lite/-/mobx-react-lite-3.0.1.tgz#417f54a819d1e3e00c073077f29373399c95b005"
+  integrity sha1-QX9UqBnR4+AMBzB38pNzOZyVsAU=
 
 mobx@^6.0.1:
   version "6.0.1"

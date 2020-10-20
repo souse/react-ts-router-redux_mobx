@@ -16,23 +16,24 @@ import route from './routes';
 import './index.scss'
 
 
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <BrowserRouter children={route}></BrowserRouter>
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// )
+
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter children={route}></BrowserRouter>
+    <Provider store={store}>
+      <ConnectedRouter history={history}>
+        <BrowserRouter children={route} />
+      </ConnectedRouter>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 )
 
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <Provider store={store}>
-//       <ConnectedRouter history={history}>
-//         <BrowserRouter children={route} />
-//       </ConnectedRouter>
-//     </Provider>
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// )
 // ReactDOM.render(
 //   <React.StrictMode>
 //     <Provider countStore={mcountStore}>

@@ -1,5 +1,5 @@
 import React, { Fragment, useContext } from 'react'
-import { observer } from 'mobx-react'
+import { observer } from 'mobx-react-lite'
 
 import ToDoList from '@/mobx/todolist'
 import 'bootstrap/dist/css/bootstrap.css'
@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 const TodoList = () => {
   const todoStore = useContext(ToDoList)
   const { todos, toggleTodo, removeTodo } = todoStore
-  
+
   return(
     <Fragment>
       <div className="row">
