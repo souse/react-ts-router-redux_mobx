@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { inject, observer, Provider } from 'mobx-react'
 
 import { Button } from 'antd-mobile'
-import { stores, StoresContext } from '@/mobx'
+// import { stores, StoresContext } from '@/mobx'
 import mcountStore, { McountProps } from '@/mobx/mcount';
 
 @inject('countStore')
