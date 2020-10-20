@@ -12,8 +12,10 @@
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "@types/react-router-dom": "^5.1.6",
+    "@types/uuid": "^8.3.0",
     "amfe-flexible": "^2.2.1",
     "antd-mobile": "^2.3.4",
+    "bootstrap": "^4.5.3",
     "connected-react-router": "^6.8.0",
     "mobx": "^6.0.1",
     "mobx-react": "^7.0.0",
@@ -24,7 +26,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "redux": "^4.0.5",
-    "typescript": "3.8.3"
+    "typescript": "3.8.3",
+    "uuid": "^8.3.1"
   },
   "scripts": {
     "start": "react-app-rewired start",

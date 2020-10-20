@@ -1,18 +1,14 @@
-import { action, computed, observable, reaction } from 'mobx'
+import { action, computed, observable } from 'mobx'
 
 export interface McountProps {
-  countStore?: McountStore
+  mcounteStore?: McountStore
 }
 
 class McountStore {
-
-  constructor() {
-    reaction(() => this.count, _ => console.log(this.count));
-  }
   
   @observable count: number = 1;
 
-  @action.bound opCount(type: string) {
+  @action opCount(type: string) {
     const { count } = this;
     
     if (type === 'add') {
@@ -22,7 +18,7 @@ class McountStore {
     }
   }
 
-  @computed get info() {
+  @computed get str() {
     if (this.count > 3) return `test computed ${this.count}`;
     return this.count;
   }

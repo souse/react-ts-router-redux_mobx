@@ -5,18 +5,18 @@ import { Button } from 'antd-mobile'
 // import { stores, StoresContext } from '@/mobx'
 import mcountStore, { McountProps } from '@/mobx/mcount';
 
-@inject('countStore')
+@inject('mcounteStore')
 @observer
 class Counter extends Component<McountProps> {
   render() {
-    const { countStore } = this.props;
+    const { mcounteStore } = this.props;
     debugger
 
     return (
       <div>
-        <Button onClick={() => countStore!.opCount('sub')}>减</Button>
-          <div style={{ textAlign: 'center' }}>{ countStore!.count }</div>  
-        <Button onClick={() => countStore!.opCount('add')}>加</Button>
+        <Button onClick={() => mcounteStore!.opCount('sub')}>减</Button>
+          <div style={{ textAlign: 'center' }}>{ mcounteStore!.count }</div>  
+        <Button onClick={() => mcounteStore!.opCount('add')}>加</Button>
       </div>
     )
   }  
@@ -25,7 +25,7 @@ class Counter extends Component<McountProps> {
 class TestMobx extends Component {
   render() {
     return (
-      <Provider countStore={mcountStore}>
+      <Provider {...mcountStore}>
         <Counter></Counter>
       </Provider>
     );

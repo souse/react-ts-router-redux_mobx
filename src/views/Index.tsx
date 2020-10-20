@@ -21,6 +21,7 @@ class Index extends Component<PropsType, any> {
           <CustomerButon txt="Go About" jumpUrl="about" history={history} />
           <CustomerButon txt="Go TextRedux" jumpUrl="tredux" history={history} />
           <CustomerButon txt="Go TextMobx" jumpUrl="tmobx" history={history} />
+          <CustomerButon txt="Go TodoList" jumpUrl="todo" history={history} />
         </div>
       </div>
     );
