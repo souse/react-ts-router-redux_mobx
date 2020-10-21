@@ -2,7 +2,6 @@ import React, { Fragment, useContext } from 'react'
 import { observer } from 'mobx-react-lite'
 
 import ToDoList from '@/mobx/todolist'
-import 'bootstrap/dist/css/bootstrap.css'
 
 const TodoList = () => {
   const todoStore = useContext(ToDoList)

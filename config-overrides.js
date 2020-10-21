@@ -20,6 +20,9 @@ module.exports = override(
       rootValue: 37.5,
       propList: ['*'],
       // exclude: /node_modules/i
+      exclude: (file) => {
+        return file.indexOf('bootstrap') !== -1;
+      }
     })
   ])
 );
