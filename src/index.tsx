@@ -10,7 +10,6 @@ import 'amfe-flexible'
 
 import store, { history } from './redux/store';
 import route from './routes';
-import './index.scss'
 
 ReactDOM.render(
   <React.StrictMode>

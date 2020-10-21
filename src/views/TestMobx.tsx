@@ -1,16 +1,14 @@
 import React, { Component } from 'react'
-// import { inject, observer, Provider } from 'mobx-react-lite'
+import { inject, observer, Provider } from 'mobx-react'
 
 import { Button } from 'antd-mobile'
-// import { stores, StoresContext } from '@/mobx'
-import mcountStore, { McountProps } from '@/mobx/mcount';
+import mcountStore, { McountProps } from '@/mobx/mcount'
 
-// @inject('mcounteStore')
-// @observer
-class Counter extends Component<McountProps> {
+@inject('mcounteStore')
+@observer
+class Counter extends Component<McountProps, {}> {
   render() {
     const { mcounteStore } = this.props;
-    debugger
 
     return (
       <div>
@@ -25,24 +23,11 @@ class Counter extends Component<McountProps> {
 class TestMobx extends Component {
   render() {
     return (
-      <div></div>
-      // <Provider {...mcountStore}>
-      //   <Counter></Counter>
-      // </Provider>
+      <Provider mcounteStore={mcountStore}>
+        <Counter></Counter>
+      </Provider>
     );
   }
 }
-
-// class TestMobx extends Component {
-//   render() {
-//     return(
-//       <Provider { ...stores }>
-//         <StoresContext.Provider value={stores}>
-//           <Counter></Counter>  
-//         </StoresContext.Provider>
-//       </Provider>
-//     )
-//   }
-// }
 
 export default TestMobx;
